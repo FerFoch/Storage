@@ -3,7 +3,6 @@ import java.util.PriorityQueue;
 import java.util.Scanner;
 public class Queue implements Input{
     PriorityQueue<String> queue = new PriorityQueue<String>();
-//    @Override
     public int input_number()
     {
         Scanner scan = new Scanner(System.in);
@@ -20,7 +19,7 @@ public class Queue implements Input{
     {
             System.out.println("Введите слово для заполнения queue:");
             queue.add(input_word());
-            System.out.println("Выберите дальнейшие действия \n 1. Вывести первый элемент очереди; \n 2. Вывести все элементы очереди; \n 3. Выход.");
+            System.out.println("Выберите дальнейшие действия \n 1. Вывести первый элемент очереди; \n 2. Вывести все элементы очереди; \n 3. Назад.");
     }
     void invis_inter()
     {

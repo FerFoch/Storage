@@ -4,7 +4,7 @@ import java.util.Scanner;
 public class Menu {
     void inter()
     {
-        System.out.println("Выберите действие: \n1.stack \n2.queue \n3.Выход");
+        System.out.println("Выберите действие: \n1.stack \n2.queue \n3.recu \n4.Выход");
     }
     int input_number()
     {
@@ -24,6 +24,9 @@ public class Menu {
                 Queue queue = new Queue();
                 queue.invis_inter();
             case 3:
+                Recursion recu = new Recursion();
+                recu.invisible_inter();
+            case 4:
                 System.exit(0);
             default:
                 System.out.println("Повторите ввод");

@@ -2,11 +2,7 @@ package Interface;
 import java.util.Scanner;
 public class Stackk implements Input, Inter {
 
-        public void SendMessage() {
-            System.out.printf("qq\n");
-        }
         java.util.Stack<String> stack = new java.util.Stack<String>();
-//        @Override
         public int input_number()
         {
             Scanner scan = new Scanner(System.in);
@@ -23,7 +19,7 @@ public class Stackk implements Input, Inter {
         {
             System.out.println("Введите слово для заполнения stack:");
             stack.push(input_word());
-            System.out.println("Выберите дальнейшие действия \n 1. Вывести первый элемент очереди; \n 2. Вывести все элементы очереди; \n 3. Найти символ; \n 4. Выход.");
+            System.out.println("Выберите дальнейшие действия \n 1. Вывести первый элемент очереди; \n 2. Вывести все элементы очереди; \n 3. Найти символ; \n 4. Назад.");
         }
         void invis_inter() {
             inter();
@@ -50,16 +46,6 @@ public class Stackk implements Input, Inter {
             }
             invis_inter();
         }
-
-//    @Override
-//    public int input_number() {
-//        return null;
-//    }
-//
-//    @Override
-//    public String input_word() {
-//        return null;
-//    }
 }
 
 
