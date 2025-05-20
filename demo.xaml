@@ -16,7 +16,6 @@
 
         <ScrollViewer Grid.Row="1">
             <StackPanel>
-                <!-- Блок с данными о товаре (предполагаемые поля) -->
                 <TextBlock Text="Общая информация" FontWeight="Bold" Margin="0,10,0,5"/>
                 <TextBlock Text="{Binding ProductName}" Margin="0,0,0,5"/>
                 <TextBlock Text="Артикул: {Binding ProductArticle}" Margin="0,0,0,5"/>
