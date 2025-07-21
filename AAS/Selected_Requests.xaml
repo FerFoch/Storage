@@ -1,0 +1,52 @@
+﻿<Window x:Class="Applic.Selected_Requests"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Applic"
+        mc:Ignorable="d"
+        Title="Изменение заявки" Height="450" Width="800" Icon="/DisplayFusion.png">
+    <Grid>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="#FF02251D" Offset="0.997"/>
+                <GradientStop Color="#FF036D54" Offset="0"/>
+                <GradientStop Color="#FF176D58" Offset="0.2"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Label Content="Время приема заявки" HorizontalAlignment="Left" Margin="10,19,0,0" VerticalAlignment="Top" Height="29" Width="140"/>
+        <Label Content="Время сдачи заявки" HorizontalAlignment="Left" Margin="10,37,0,0" VerticalAlignment="Top" Width="138"/>
+        <Label Content="Номер заявки" HorizontalAlignment="Left" Margin="10,55,0,0" VerticalAlignment="Top" Width="158"/>
+        <Label Content="Серийный номер модели" HorizontalAlignment="Left" Margin="10,89,0,0" VerticalAlignment="Top" Width="154" RenderTransformOrigin="0.503,0.888"/>
+        <Label Content="ФИО специалиста" HorizontalAlignment="Left" Margin="10,71,0,0" VerticalAlignment="Top" Width="142"/>
+        <Label Content="Юр. Название" HorizontalAlignment="Left" Margin="10,107,0,0" VerticalAlignment="Top" Width="140"/>
+        <Label Content="Адрес" HorizontalAlignment="Left" Margin="10,125,0,0" VerticalAlignment="Top" Width="52"/>
+        <Label Content="ФИО заказчика" HorizontalAlignment="Left" Margin="10,143,0,0" VerticalAlignment="Top" Width="100"/>
+        <Label Content="Номер заказчика" HorizontalAlignment="Left" Margin="10,161,0,0" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Передаваемая модель" HorizontalAlignment="Left" Margin="10,181,0,0" VerticalAlignment="Top" Width="140"/>
+        <Label Content="Серийный номер передаваемой модели" HorizontalAlignment="Left" Margin="10,199,0,0" VerticalAlignment="Top" Width="236"/>
+        <Label Content="Изъятая модель" HorizontalAlignment="Left" Margin="10,217,0,0" VerticalAlignment="Top" Width="100"/>
+        <Label Content="Серийный номер изъятой модели" HorizontalAlignment="Left" Margin="10,234,0,0" VerticalAlignment="Top" Width="198" Height="26"/>
+        <Button Content="Сохранить" Background="Transparent"  BorderBrush="Black" HorizontalAlignment="Left" Margin="657,19,0,0" VerticalAlignment="Top" Click="Save_Button_ClickAsync" Height="40" Width="96"/>
+        <Button Content="Назад" HorizontalAlignment="Left"  BorderBrush="Black" Margin="671,77,0,0" Background="Transparent" VerticalAlignment="Top" Click="Button_Click" Height="40" Width="68"/>
+        <TextBox Background="Transparent" BorderBrush="Black" HorizontalAlignment="Left" Margin="315,23,0,0" TextWrapping="Wrap" x:Name ="Receipt_Time" VerticalAlignment="Top" Width="258"/>
+        <TextBox Background="Transparent" BorderBrush="Black" HorizontalAlignment="Left" Margin="315,41,0,0" TextWrapping="Wrap" x:Name="Execute_Time" Text="" VerticalAlignment="Top" Width="258"/>
+        <TextBox Background="Transparent" BorderBrush="Black" HorizontalAlignment="Left" Margin="315,59,0,0" TextWrapping="Wrap" IsReadOnly="True" x:Name="Request_ID" Text="" VerticalAlignment="Top" Width="258"/>
+        <TextBox Background="Transparent" BorderBrush="Black" HorizontalAlignment="Left" Margin="315,77,0,0" TextWrapping="Wrap" x:Name="Executor" Text="" VerticalAlignment="Top" Width="258"/>
+        <TextBox Background="Transparent" BorderBrush="Black" HorizontalAlignment="Left" Margin="315,113,0,0" TextWrapping="Wrap" x:Name="Legal_Name" Text="" VerticalAlignment="Top" Width="258"/>
+        <TextBox Background="Transparent" BorderBrush="Black" HorizontalAlignment="Left" Margin="315,131,0,0" TextWrapping="Wrap" x:Name="Destanation" Text="" VerticalAlignment="Top" Width="258"/>
+        <TextBox Background="Transparent" BorderBrush="Black" HorizontalAlignment="Left" Margin="315,149,0,0" TextWrapping="Wrap" x:Name="Representative" Text="" VerticalAlignment="Top" Width="258" />
+        <TextBox Background="Transparent" BorderBrush="Black" HorizontalAlignment="Left" Margin="315,166,0,0" TextWrapping="Wrap" x:Name="Represent_Pnumber" Text="" VerticalAlignment="Top" Width="258"/>
+        <TextBox Background="Transparent" BorderBrush="Black" HorizontalAlignment="Left" Margin="315,184,0,0" TextWrapping="Wrap" x:Name="Transmit_Model" Text="" VerticalAlignment="Top" Width="258"/>
+        <TextBox Background="Transparent" BorderBrush="Black" HorizontalAlignment="Left" Margin="315,202,0,0" TextWrapping="Wrap" x:Name="Transmti_Model_Snumber" Text="" VerticalAlignment="Top" Width="258"/>
+        <TextBox Background="Transparent" BorderBrush="Black" HorizontalAlignment="Left" Margin="315,220,0,0" TextWrapping="Wrap" x:Name="Taken_Model" Text="" VerticalAlignment="Top" Width="258"/>
+        <TextBox Background="Transparent" BorderBrush="Black" HorizontalAlignment="Left" Margin="315,238,0,0" TextWrapping="Wrap" x:Name="Taken_Model_Snumber" Text="" VerticalAlignment="Top" Width="258"/>
+        <TextBox Background="Transparent" BorderBrush="Black" HorizontalAlignment="Left" Margin="315,95,0,0" TextWrapping="Wrap" x:Name="Model_ID" VerticalAlignment="Top" Width="258"/>
+        <Label Content="Тип связи" HorizontalAlignment="Left" Margin="10,251,0,0" VerticalAlignment="Top" Width="198" Height="26"/>
+        <Label Content="ФИО инженера" HorizontalAlignment="Left" Margin="10,270,0,0" VerticalAlignment="Top" Width="198" Height="26"/>
+        <Label Content="Тип работ" HorizontalAlignment="Left" Margin="10,288,0,0" VerticalAlignment="Top" Width="198" Height="26"/>
+        <TextBox Background="Transparent" BorderBrush="Black" HorizontalAlignment="Left" Margin="315,256,0,0" TextWrapping="Wrap" x:Name="Connection_Type" Text="" VerticalAlignment="Top" Width="258"/>
+        <TextBox Background="Transparent" BorderBrush="Black" HorizontalAlignment="Left" Margin="315,274,0,0" TextWrapping="Wrap" IsReadOnly="True" x:Name="Specialist_Name" Text="" VerticalAlignment="Top" Width="258"/>
+        <TextBox Background="Transparent" BorderBrush="Black" HorizontalAlignment="Left" Margin="315,292,0,0" TextWrapping="Wrap" x:Name="Type_Of_Work" Text="" VerticalAlignment="Top" Width="258"/>
+    </Grid>
+</Window>
